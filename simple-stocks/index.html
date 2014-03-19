@@ -11,45 +11,38 @@
 
 <html ng-app>
 
-	<head>
-		<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.0.min.js"></script>
-		<script src = 'http://code.angularjs.org/1.2.9/angular.min.js'></script>
-		<script type = "text/javascript" src = "main.js"></script>
-		<link rel="stylesheet" href="style.css">
-		<link rel="icon" type="image/png" href="favicon.ico">
-	</head>
-
+ <head>
+  <script type = "text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script src = 'http://code.angularjs.org/1.2.9/angular.min.js'></script>
+  <script type = "text/javascript" src = "main.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.ico">
+ </head>
+ 
 <title>pC: SimpleStockUI</title>
 
 <body ng-controller='TableController'>
-	<div id='wrapper'>
-		<div id = 'stock_panel'>
-		<form id="stock_form">
-			<input class='transmutable' type='text' ng-model='stockInput' placeholder='enter stock symbol & press enter' id = 'stock_input' autofocus>
-			<button ng-click="addElement()" id = 'search_btn'>Search</button>
-			
-		</form>
-		<input class='transmutable' id='filter_input' type='text' ng-model='filterInput' placeholder='enter term to filter table' ng-model-instant>	
-		<br>
-		<input class='immutable' id='company_info' type='text' readonly>
-			<input class='immutable' id='ticker_symbol' type='text'readonly>
-	<table id='stock_table'>
-		<tbody>
-		<tr ng-repeat='stats in trElements | filter: filterInput'>
-			<td id='stats_text'>
-				{{stats.text}}
-			</td>
-			<td id='stats_value'>
-				{{stats.value}}
-			</td>
-		</tr>
-		</tbody>
-	</table>
-	</div>
-	</div>
-	<div id='footer'>
-	<text id='source'>Powered by Yahoo! Finance</text>
-	</div>
+<div id='wrapper'>
+ <form id="stock_form">
+  <input class='transmutable' type='text' ng-model='stockInput' placeholder='enter stock symbol & press enter' id = 'stock_input' autofocus>
+  <button ng-click="addElement()" id = 'search_btn'>Search</button>
+ </form>
+ <input class='transmutable' id='filter_input' type='text' ng-model='filterInput' placeholder='enter term to filter table' ng-model-instant>	
+ <br>
+ <input class='immutable' id='company_info' type='text' readonly>
+ <input class='immutable' id='ticker_symbol' type='text'readonly>
+ <table id='stock_table'>
+  <tbody>
+   <tr ng-repeat='stats in trElements | filter: filterInput'>
+    <td id='stats_text'>{{stats.text}}</td>
+    <td id='stats_value'>{{stats.value}}</td>
+    </tr>
+  </tbody>
+ </table>
+</div>
+<div id='footer'>
+ <text id='source'>Powered by Yahoo! Finance</text>
+</div>
 </body>
 
 </html>
