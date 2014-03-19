@@ -31,7 +31,7 @@ function TableController($scope) {
 			company = document.getElementById('company_info');
 
 
-		url = 'http://parsedcache.com/simple-proxy/' +
+		url = 'http://www.parsedcache.com/simple-proxy/' +
 			'ba-simple-proxy.php?url=http%3A%2F%2F' +
 			'finance.yahoo.com%2Fq%2Fks%3Fs%3D' +
 			symbol +
