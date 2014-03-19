@@ -1,0 +1,64 @@
+/*
+* pC: SimpleStockUI : style.css
+* Version: 0.0.0.1
+* Company: Parsed Cache
+* Author: Brian David Arpie
+* Date Created: 3/15/2014
+* Date Updated: 3/19/2014
+*/
+
+input.transmutable{
+	width:200px;
+	height:40px;
+	color:rgba(200,100,50,0.8);
+	border-width:2px;
+	border-color:rgba(255,212,64,0.1);
+
+}
+table{
+	padding: 5px 0px 0px 0px;
+	font-size: 15px;
+}
+input.immutable{
+	width: 255px;
+	padding: 7px 0px 0px 0px;
+	font-size:20px;
+	border:none;
+}
+#filter_input{
+	margin-top:2px;
+	width: 255px;
+}
+input:focus{
+	outline:none;
+	box-shadow: 0 0 5px rgba(255,212,64,0.5);
+
+}
+#search_btn{
+	background:rgba(255,212,64,0.5);
+	width:50px;
+	height:50px;
+	color:rgba(200,100,50,0.8);
+	border: rgba(255,212,64,0.5) 2px solid;
+	border-radius:10px;
+}
+td{
+	width: 255px;
+}
+#wrapper{
+	padding: 30px;
+	font-family:helvetica, verdana;
+	border: rgba(77,77,50,0.2) 3px groove; 
+}
+#footer{
+	font-size:10px;
+	border-top:none;
+	color:rgba(0,0,0,0.5);
+	text-align:center;
+	overflow:hidden;
+	padding: 5px 0px 5px 0px;
+}
+#source{
+	font-size:10px;
+	text-align:center;
+}
